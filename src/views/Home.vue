@@ -592,7 +592,7 @@
 <script>
 import { ref, onMounted } from "vue";
 
-//......
+//...
 export default {
   setup() {
     const CamionsTc = ref([
@@ -610,7 +610,7 @@ export default {
         img: "Isuzu NQR 500.png",
       },
     ]);
-    //......
+    //...
     const CamionsDc = ref([
       {
         name: "Toyota Dyna",
@@ -621,7 +621,7 @@ export default {
         img: "Fiat Doblo fourgon.png",
       },
     ]);
-    //......
+    //...
     const Chiffres = ref([
       {
         nbr: "+62,000",
@@ -636,7 +636,7 @@ export default {
         sjt: "employees",
       },
     ]);
-    //......
+    //...
     const Chiffres01 = ref([
       {
         nbr: "+300",
@@ -651,7 +651,7 @@ export default {
         sjt: "refrigeration specialists",
       },
     ]);
-    //......
+    //...
     const services01 = ref([
       {
         nbr: "24/7 support",
@@ -666,7 +666,7 @@ export default {
         sjt: "We take care of all administrative procedures: license renewal, test certificates, legal paperwork.",
       },
     ]);
-    //......
+    //...
     const services02 = ref([
       {
         nbr: "Maintenance",
@@ -681,7 +681,7 @@ export default {
         sjt: "Your vehicle can be customized with your own livery.",
       },
     ]);
-    //......
+    //...
     function toggle() {
       const toggleitem = document.querySelector(".__toggle");
       toggleitem.classList.add("__descend");
@@ -690,11 +690,11 @@ export default {
       const toggleitem = document.querySelector(".__toggle");
       toggleitem.classList.remove("__descend");
     }
-    //......
+    //...
     onMounted(function () {
       AOS.init();
     });
-    //......
+    //...
     return {
       CamionsTc,
       CamionsDc,
@@ -1110,7 +1110,7 @@ hr {
 }
 
 .__HomeScreen .__Work .__TStates .__THistory {
-  font-family: mulish, sans-serif;
+  font-family: Mulish, sans-serif;
   margin-top: 0;
 }
 
@@ -1625,7 +1625,7 @@ hr {
   .__form
   .__profileTitle
   .__profile {
-  width: 400px;
+  width: 290px;
 }
 
 .__HomeScreen
@@ -1679,7 +1679,7 @@ hr {
 }
 
 .__HomeScreen .__contact .__contactContainer .__form .__profileTitle .__title {
-  width: 400px;
+  width: 290px;
 }
 
 .__HomeScreen
@@ -1746,7 +1746,7 @@ hr {
 }
 
 .__HomeScreen .__contact .__contactContainer .__form .__fullName .__Forename {
-  width: 400px;
+  width: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1794,7 +1794,7 @@ hr {
 }
 
 .__HomeScreen .__contact .__contactContainer .__form .__fullName .__Surmame {
-  width: 400px;
+  width: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1855,7 +1855,7 @@ hr {
 }
 
 .__HomeScreen .__contact .__contactContainer .__form .__reason .__Forename {
-  width: 400px;
+  width: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1903,7 +1903,7 @@ hr {
 }
 
 .__HomeScreen .__contact .__contactContainer .__form .__reason .__Surmame {
-  width: 400px;
+  width: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2025,7 +2025,7 @@ hr {
 }
 
 .__HomeScreen .__contact .__contactContainer .__form .__Phone .__Forename {
-  width: 400px;
+  width: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2073,7 +2073,7 @@ hr {
 }
 
 .__HomeScreen .__contact .__contactContainer .__form .__Phone .__Surmame {
-  width: 400px;
+  width: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2381,7 +2381,7 @@ hr {
     position: relative;
   }
   .__HomeScreen #__ci {
-    width: 400px;
+    width: 290px;
   }
   .__HomeScreen .__toggle {
     -webkit-transition: 0.9s cubic-bezier(1, 0, 0, 1);
@@ -2907,7 +2907,7 @@ hr {
     font-size: 17px !important;
   }
   .__Work .__TStates #__THr {
-    font-size: 10px !important;
+    font-size: 8px !important;
   }
   .__toggle {
     height: 100vh !important;
@@ -2994,13 +2994,8 @@ hr {
     font-size: 14px !important;
   }
   .__form .__profileTitle {
-    width: 400px !important;
-  }
-  .__form .__profileTitle .__profile,
-  .__form .__profileTitle .__title {
-    width: -webkit-max-content !important;
-    width: -moz-max-content !important;
-    width: max-content !important;
+    flex-direction: column !important;
+    width: 290px !important;
   }
   .__form .__profileTitle .__profile .__radio,
   .__form .__profileTitle .__title .__radio {
@@ -3028,12 +3023,14 @@ hr {
   }
   .__form .__email .__Forename,
   .__form .__message .__Forename {
-    width: 400px !important;
+    width: 290px !important;
   }
   #__info {
     -webkit-box-align: start !important;
     -ms-flex-align: start !important;
     align-items: flex-start !important;
+    width: max-content !important;
+    margin-top: 2rem;
   }
   #__info .__Itext {
     font-size: 18px !important;
@@ -3043,8 +3040,11 @@ hr {
     text-align: left !important;
     font-size: 13px !important;
   }
+  .__chart {
+    width: 200px !important;
+  }
   .__chart label {
-    font-size: 13px !important;
+    font-size: 9px !important;
   }
   .__loc {
     padding: 0.3rem 0.6rem !important;
@@ -3054,6 +3054,17 @@ hr {
   }
   .__loc .__address {
     font-size: 12px !important;
+  }
+  .__HomeScreen .__contact .__contactContainer .__form .__conditions {
+    align-items: center;
+  }
+  .__HomeScreen .__contact .__contactContainer .__form .__conditions button {
+    margin: 3rem 0 0 0;
+    background-color: #00a343;
+    color: white;
+    padding: 1rem 6rem;
+    border: none;
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=style.css.map */
