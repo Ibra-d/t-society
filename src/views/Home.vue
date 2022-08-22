@@ -363,12 +363,12 @@
             For more information, please don’t <br />
             hesitate to get in touch with William :
           </p>
-          <p class="_Mul" id="mul">
-            William Racinne – Country Director <br />
-            Telephone: +27 72 134 1225 <br />
-            Email : wracinne@transportsociety.co.za <br />
-            Twitter : @WilliamRacinne
-          </p>
+          <div class="_Mul" id="mul">
+            <p>William Racinne – Country Director</p>
+            <p>Telephone: +27 72 134 1225</p>
+            <p>Email : wracinne@transportsociety.co.za</p>
+            <p>Twitter : @WilliamRacinne</p>
+          </div>
         </div>
         <form class="__form" data-aos="fade-left">
           <div class="__profileTitle">
@@ -439,7 +439,7 @@
           <div class="__Phone">
             <div class="__Forename">
               <label for="Forename">Telephone</label>
-              <input type="text" id="Forename" />
+              <input type="tel" id="Forename" />
             </div>
             <div class="__Surmame">
               <label for="Surmame">Country</label>
@@ -1583,11 +1583,17 @@ hr {
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 0;
+  margin-top: 3rem !important;
 }
 
 .__HomeScreen .__contact .__contactContainer .__info ._Mul {
   font-family: Mulish, sans-serif;
   font-size: 18px;
+
+  p {
+    margin-bottom: 0 !important;
+    margin-top: 8px !important;
+  }
 }
 
 .__HomeScreen .__contact .__contactContainer .__form {
@@ -1618,6 +1624,7 @@ hr {
   -ms-flex-align: center;
   align-items: center;
   gap: 2rem;
+  width: 100%;
 }
 
 .__HomeScreen
@@ -1626,7 +1633,7 @@ hr {
   .__form
   .__profileTitle
   .__profile {
-  width: 290px;
+  width: 370px !important;
 }
 
 .__HomeScreen
@@ -1680,7 +1687,7 @@ hr {
 }
 
 .__HomeScreen .__contact .__contactContainer .__form .__profileTitle .__title {
-  width: 290px;
+  width: 370px;
 }
 
 .__HomeScreen
@@ -1747,7 +1754,7 @@ hr {
 }
 
 .__HomeScreen .__contact .__contactContainer .__form .__fullName .__Forename {
-  width: 290px;
+  width: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1795,7 +1802,7 @@ hr {
 }
 
 .__HomeScreen .__contact .__contactContainer .__form .__fullName .__Surmame {
-  width: 290px;
+  width: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1856,7 +1863,7 @@ hr {
 }
 
 .__HomeScreen .__contact .__contactContainer .__form .__reason .__Forename {
-  width: 290px;
+  width: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1904,7 +1911,7 @@ hr {
 }
 
 .__HomeScreen .__contact .__contactContainer .__form .__reason .__Surmame {
-  width: 290px;
+  width: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2026,7 +2033,7 @@ hr {
 }
 
 .__HomeScreen .__contact .__contactContainer .__form .__Phone .__Forename {
-  width: 290px;
+  width: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2074,7 +2081,7 @@ hr {
 }
 
 .__HomeScreen .__contact .__contactContainer .__form .__Phone .__Surmame {
-  width: 290px;
+  width: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2382,7 +2389,7 @@ hr {
     position: relative;
   }
   .__HomeScreen #__ci {
-    width: 290px;
+    width: 370px;
   }
   .__HomeScreen .__toggle {
     -webkit-transition: 0.9s cubic-bezier(1, 0, 0, 1);
@@ -2618,14 +2625,15 @@ hr {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
     height: 100%;
+    gap: 2rem;
   }
   .__Work #sta #__la {
     width: 500px;
@@ -2665,15 +2673,12 @@ hr {
     height: -moz-max-content;
     height: max-content;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: space-evenly;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    // align-items: center;
   }
   #contact #cc__ #__info {
     width: 100%;
@@ -2842,12 +2847,54 @@ hr {
 }
 
 @media only screen and (max-width: 900px) {
+  .__loc {
+    i {
+      display: none !important;
+    }
+  }
+  #contact #cc__ #__info {
+    margin-top: 0;
+    #__dnr {
+      display: flex;
+      margin-bottom: 0;
+    }
+  }
+  #__meca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #__meca #__img {
+    display: flex;
+
+    img {
+      width: 400px !important;
+      transform: translateY(3.5rem);
+    }
+  }
+  .__Header {
+    height: max-content !important;
+    padding: 0.3rem 0 !important;
+
+    i {
+      margin: 0 !important;
+      margin-right: 1rem !important;
+    }
+
+    .__Logo {
+      margin-left: 1rem !important;
+      img {
+        width: 60px !important;
+      }
+      div {
+        display: none !important;
+      }
+    }
+  }
+
   #__SauteOYeux {
     padding: 0;
-    background: url("../assets/Bitmap.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
+    background: #00a343;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     display: -webkit-box;
@@ -2859,6 +2906,20 @@ hr {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
+    #__soyt {
+      height: 16rem !important;
+      margin-left: 0;
+      align-items: center !important;
+
+      #__h1r {
+        text-align: center;
+      }
+
+      .__p1r {
+        text-align: center;
+      }
+    }
   }
   #__SauteOYeux #__PresentationContainer {
     padding: 2rem 0;
@@ -2895,7 +2956,10 @@ hr {
     margin: 3rem 1rem 0 1rem !important;
   }
   .__HomeScreen .__Work {
-    justify-content: center !important;
+    // justify-content: center !important;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 0 !important;
   }
   .__Work #sta #__la {
@@ -2912,7 +2976,7 @@ hr {
     justify-content: center !important;
   }
   .__Work #sta #__la #tsinm {
-  width: 100% ;
+    width: 100%;
   }
   .__Work #sta #__la .__Mplus {
     display: -webkit-box !important;
@@ -2963,14 +3027,17 @@ hr {
     padding: 0 1rem !important;
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
-    -ms-flex-direction: column !important;
-    flex-direction: column !important;
+    // -ms-flex-direction: column !important;
+    // flex-direction: column !important;
+  }
+  .__Work .__TStates #__gr {
+    font-size: 16px !important;
   }
   .__Work .__TStates #__h2r {
     font-size: 17px !important;
   }
   .__Work .__TStates #__THr {
-    font-size: 8px !important;
+    font-size: 12px !important;
   }
   .__toggle {
     height: 100vh !important;
@@ -3041,9 +3108,9 @@ hr {
     justify-content: space-around !important;
     margin: 0 1rem !important;
   }
-  .__Mecano {
-    background: #00a343 !important;
-  }
+  // .__Mecano {
+  //   // background: #00a343 !important;
+  // }
   .__Mecano .__FullS {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -3058,7 +3125,8 @@ hr {
   }
   .__form .__profileTitle {
     flex-direction: column !important;
-    width: 290px !important;
+    width: 370px !important;
+    gap: 0 !important;
   }
   .__form .__profileTitle .__profile .__radio,
   .__form .__profileTitle .__title .__radio {
@@ -3071,6 +3139,7 @@ hr {
     -webkit-box-direction: normal !important;
     -ms-flex-direction: column !important;
     flex-direction: column !important;
+    gap: 1rem !important;
   }
   .__form .__email,
   .__form .__message {
@@ -3079,14 +3148,14 @@ hr {
     display: flex !important;
     -webkit-box-pack: center !important;
     -ms-flex-pack: center !important;
-    justify-content: center !important;
+    justify-content: flex-start !important;
     -webkit-box-align: center !important;
     -ms-flex-align: center !important;
     align-items: center !important;
   }
   .__form .__email .__Forename,
   .__form .__message .__Forename {
-    width: 290px !important;
+    width: 370px !important;
   }
   #__info {
     -webkit-box-align: start !important;
@@ -3097,6 +3166,7 @@ hr {
   }
   #__info .__Itext {
     font-size: 18px !important;
+    margin-top: 0 !important;
   }
   #__info ._Mul,
   #__info .__Itext {
@@ -3118,9 +3188,9 @@ hr {
   .__loc .__address {
     font-size: 12px !important;
   }
-  .__HomeScreen .__contact .__contactContainer .__form .__conditions {
-    align-items: center;
-  }
+  // .__HomeScreen .__contact .__contactContainer .__form .__conditions {
+  //   align-items: center;
+  // }
   .__HomeScreen .__contact .__contactContainer .__form .__conditions button {
     margin: 3rem 0 0 0;
     background-color: #00a343;
@@ -3129,6 +3199,52 @@ hr {
     border: none;
     cursor: pointer;
   }
+}
+@media only screen and (max-width: 750px) {
+  .__Work #sta {
+    flex-direction: column !important;
+  }
+  #__h2r,
+  .__Work #sta #__la #__THr,
+  .__Work #sta #__la #__gr,
+  .__Work #sta #__la #tsinm,
+  #sta #__la #__div div #sjtm {
+    text-align: center !important;
+  }
+
+  .__HomeScreen .__Work .__TStates .__Mplus .__Numbers .__div div {
+    align-items: center !important;
+  }
+  .__Mecano {
+    justify-content: center !important;
+    background: #00a343 !important;
+    .__img {
+      display: none !important;
+    }
+    #__service {
+      align-items: center !important;
+      text-align: center !important;
+
+      #fs,
+      #os {
+        align-items: center !important;
+      }
+    }
+  }
+
+  #cc__ {
+    flex-direction: column-reverse !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 2rem !important;
+
+    .__info {
+      h2 {
+        display: none !important;
+      }
+    }
+  }
+
 }
 /*# sourceMappingURL=style.css.map */
 </style>
