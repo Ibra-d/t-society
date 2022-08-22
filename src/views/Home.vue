@@ -955,6 +955,7 @@ hr {
 
 .__HomeScreen .__SauteOYeux .__PresentationContainer div a {
   background-color: #fff;
+  color: black;
   padding: 1rem 2rem;
   font-weight: 700;
   text-decoration: none;
@@ -2874,6 +2875,68 @@ hr {
     align-items: center;
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
+  }
+
+  .__HomeScreen .__Mecano .__Service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    color: white;
+    margin: 3rem 1rem 0 1rem !important;
+  }
+  .__HomeScreen .__Work {
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+  .__Work #sta #__la {
+    width: min-content !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  .__Work #sta #__la #tsinm {
+  width: 100% ;
+  }
+  .__Work #sta #__la .__Mplus {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+  #sta #__la #__div div {
+    width: 6rem !important;
+    #chm {
+      font-size: 14px !important;
+    }
+    #sjtm {
+      font-size: 11px !important;
+    }
   }
   /* ___ */
   .__CContainer {
