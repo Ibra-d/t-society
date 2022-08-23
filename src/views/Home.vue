@@ -2587,6 +2587,7 @@ hr {
 }
 
 @media only screen and (max-width: 1380px) {
+  //#contact #cc__
   .__Center img {
     width: 500px;
   }
@@ -2678,6 +2679,7 @@ hr {
     justify-content: space-evenly;
     -webkit-box-align: center;
     -ms-flex-align: center;
+    flex-direction: column;
     // align-items: center;
   }
   #contact #cc__ #__info {
@@ -3244,7 +3246,6 @@ hr {
       }
     }
   }
-
 }
 /*# sourceMappingURL=style.css.map */
 </style>
